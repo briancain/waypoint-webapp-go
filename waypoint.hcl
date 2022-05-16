@@ -62,9 +62,9 @@ runner {
   enabled = true
 
   data_source "git" {
-    url  = "https://github.com/briancain/go-gitops.git"
-    path = "k8s"
-    ref  = config.internal.DATA_REF
+    url  = "https://github.com/briancain/waypoint-webapp-go.git"
+    path = ""
+    //ref  = config.internal.DATA_REF
   }
 }
 
