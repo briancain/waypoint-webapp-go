@@ -1,4 +1,4 @@
-# Waypoint Go Example
+# Waypoint Go Deployed to Kubernetes Example
 
 | Title    | Description                                                                          |
 | -------- | ------------------------------------------------------------------------------------ |
