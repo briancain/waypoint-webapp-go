@@ -1,17 +1,17 @@
 project = "go-gitops-0"
 
-#pipeline "mario" {
-#  step "superstar" {
-#    use "exec" {
-#      command = ["echo", "hi"]
-#    }
-#  }
-#  step "mushroom" {
-#    use "exec" {
-#      command = ["echo", "bye"]
-#    }
-#  }
-#}
+pipeline "mario" {
+  step "superstar" {
+    use "exec" {
+      command = ["echo", "hi"]
+    }
+  }
+  step "mushroom" {
+    use "exec" {
+      command = ["echo", "bye"]
+    }
+  }
+}
 
 runner {
   enabled = true
