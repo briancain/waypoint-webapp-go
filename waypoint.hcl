@@ -5,15 +5,15 @@ pipeline "mario" {
     image_url = "localhost:5000/waypoint-odr:dev"
 
     use "exec" {
-      Command = "ls"
+      command = "ls"
     }
   }
   step "mushroom" {
     image_url = "localhost:5000/waypoint-odr:dev"
 
     use "exec" {
-      Command = "ls"
-      Args = ["-lah"]
+      command = "ls"
+      args = ["-lah"]
     }
   }
 }
