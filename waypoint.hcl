@@ -2,14 +2,14 @@ project = "go-gitops-0"
 
 pipeline "mario" {
   step "superstar" {
-    image_url = "waypoint-odr:dev"
+    image_url = "localhost:5000/waypoint-odr:dev"
 
     use "exec" {
       command = ["ls"]
     }
   }
   step "mushroom" {
-    image_url = "waypoint-odr:dev"
+    image_url = "localhost:5000/waypoint-odr:dev"
 
     use "exec" {
       command = ["ls", "-lah"]
