@@ -1,6 +1,14 @@
 project = "go-gitops-0"
 
 pipeline "mario" {
+  step "hammer" {
+    image_url = "localhost:5000/waypoint-odr:dev"
+
+    use "build" {
+      DisablePush = false
+    }
+  }
+
   step "superstar" {
     image_url = "localhost:5000/waypoint-odr:dev"
 
