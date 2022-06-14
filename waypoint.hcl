@@ -8,7 +8,6 @@ pipeline "mario" {
       DisablePush = false
     }
   }
-
   step "superstar" {
     image_url = "localhost:5000/waypoint-odr:dev"
 
