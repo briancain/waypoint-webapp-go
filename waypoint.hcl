@@ -5,7 +5,7 @@ pipeline "mario" {
     image_url = "localhost:5000/waypoint-odr:dev"
 
     use "build" {
-      disable_push = true
+      disable_push = false
     }
   }
   step "superstar" {
