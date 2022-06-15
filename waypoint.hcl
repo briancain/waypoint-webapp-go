@@ -13,7 +13,7 @@ pipeline "mario" {
 
     use "exec" {
       command = "echo"
-      args    = ["hello!!"]
+      args    = ["\nhello!!"]
     }
   }
   step "mushroom" {
@@ -22,6 +22,14 @@ pipeline "mario" {
     use "exec" {
       command = "ls"
       args    = ["-lah"]
+    }
+  }
+  step "castle" {
+    image_url = "localhost:5000/waypoint-odr:dev"
+
+    use "exec" {
+      command = "echo"
+      args    = ["\ngoodbye o/"]
     }
   }
 }
