@@ -8,6 +8,13 @@ pipeline "mario" {
       disable_push = false
     }
   }
+  step "level-up" {
+    image_url = "localhost:5000/waypoint-odr:dev"
+
+    use "deploy" {
+      release = false
+    }
+  }
   step "superstar" {
     image_url = "localhost:5000/waypoint-odr:dev"
 
@@ -22,13 +29,6 @@ pipeline "mario" {
     use "exec" {
       command = "ls"
       args    = ["-lah"]
-    }
-  }
-  step "level-up" {
-    image_url = "localhost:5000/waypoint-odr:dev"
-
-    use "deploy" {
-      release = false
     }
   }
   step "castle" {
