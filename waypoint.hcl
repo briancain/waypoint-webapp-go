@@ -15,12 +15,12 @@ pipeline "mario" {
       release = false
     }
   }
-  #step "the-end" {
-  #  image_url = "localhost:5000/waypoint-odr:dev"
+  step "the-end" {
+    image_url = "localhost:5000/waypoint-odr:dev"
 
-  #  use "release" {
-  #  }
-  #}
+    use "release" {
+    }
+  }
   step "superstar" {
     image_url = "localhost:5000/waypoint-odr:dev"
 
