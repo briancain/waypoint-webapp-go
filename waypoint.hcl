@@ -1,12 +1,12 @@
 project = "go-gitops-0"
 
 pipeline "mario" {
-  #step "all-of-it" {
-  #  image_url = "localhost:5000/waypoint-odr:dev"
+  step "all-of-it" {
+    image_url = "localhost:5000/waypoint-odr:dev"
 
-  #  use "up" {
-  #  }
-  #}
+    use "up" {
+    }
+  }
   step "hammer" {
     image_url = "localhost:5000/waypoint-odr:dev"
 
