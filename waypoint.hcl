@@ -65,10 +65,7 @@ runner {
 
 app "go" {
   build {
-    use "pack" {
-      // ARM builds!!!
-      builder = "bcainhashicorp/herokubuilder:22"
-    }
+    use "pack" {}
 
     registry {
       use "docker" {
