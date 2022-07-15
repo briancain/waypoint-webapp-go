@@ -2,50 +2,36 @@ project = "go-gitops-0"
 
 pipeline "mario" {
   step "all-of-it" {
-    image_url = "localhost:5000/waypoint-odr:dev"
-
     use "up" {
     }
   }
   step "hammer" {
-    image_url = "localhost:5000/waypoint-odr:dev"
-
     use "build" {
       disable_push = false
     }
   }
   step "level-up" {
-    image_url = "localhost:5000/waypoint-odr:dev"
-
     use "deploy" {
       release = false
     }
   }
   step "the-end" {
-    image_url = "localhost:5000/waypoint-odr:dev"
-
     use "release" {
     }
   }
   step "superstar" {
-    image_url = "localhost:5000/waypoint-odr:dev"
-
     use "exec" {
       command = "echo"
       args    = ["\nhello!!"]
     }
   }
   step "mushroom" {
-    image_url = "localhost:5000/waypoint-odr:dev"
-
     use "exec" {
       command = "ls"
       args    = ["-lah"]
     }
   }
   step "castle" {
-    image_url = "localhost:5000/waypoint-odr:dev"
-
     use "exec" {
       command = "echo"
       args    = ["\ngoodbye o/"]
